@@ -88,7 +88,7 @@ export default function Home() {
               type="button"
               className="px-4 py-2 font-bold rounded-md commonBorder"
             >
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </div>
         </div>
@@ -110,7 +110,9 @@ export default function Home() {
           </button>
           <div className="justify-center">
             {images.map((ele, index) => (
-              <>{index === currentIndex && ele}</>
+              <>
+                <div key={index}>{index === currentIndex && ele}</div>
+              </>
             ))}
           </div>
           <button
